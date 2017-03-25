@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
   database: "burgers_db",
   // socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 });
-}else {
+} else {
   var connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 
